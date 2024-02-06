@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header/Header';
-import Language from './components/Language/Language';
+import HeaderM from './components/Header/HeaderM';
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div>
-      {windowWidth <= 500 ? <Language /> : <Header />}
+      {windowWidth <= 576 ? <HeaderM /> : <Header />}
     </div>
   );
 }
