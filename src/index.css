@@ -76,4 +76,11 @@ body {
   
 }
 
+@media (max-width: 576px){
+  body{
+  width: 320px;
+  padding: 0 25px;
+  }
+}
+
 
