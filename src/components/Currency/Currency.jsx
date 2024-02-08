@@ -1,4 +1,3 @@
-import './Currency.scss'
 import Form from "react-bootstrap/Form";
 
 function Currency() {
