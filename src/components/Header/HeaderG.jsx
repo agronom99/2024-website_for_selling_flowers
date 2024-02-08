@@ -12,10 +12,11 @@ import Vaiber from "../../components/images/vaiber.svg";
 import Insta from "../../components/images/insta.svg";
 import Telegram from "../../components/images/telegram (3) 1.svg";
 import Facebook from "../../components/images/facebook.svg";
-import SelectBasicExample from "../Currency/Currency";
-import Language from "../Language/Language";
-import City from "../City/City";
+import CurrencyG from "../Currency/CurrencyG";
+import LanguageG from "../Language/LanguageG";
+import CityG from "../City/CityG";
 import Menu from "../../components/images/menu.png";
+import CatalogList from "../CatalogList/CatalogList";
 
 const HeaderG = () => {
   return (
@@ -24,15 +25,15 @@ const HeaderG = () => {
         <div className="article">
           <div className="box-1">
             <p className=" mr-1 sm:mr-2 hidden sm:contents">Валюта </p>
-            <SelectBasicExample />
+            <CurrencyG />
           </div>
           <div className="box-2">
             <p className=" mr-1 sm:mr-3 hidden sm:contents">Мова </p>
-            <Language />
+            <LanguageG />
           </div>
           <div className="box-3">
             <p className="mr-2">Місто </p>
-            <City />
+            <CityG />
           </div>
           <div className="box-4">
             <img className=" w-6" src={Bookmarks} alt="entrance" />
@@ -92,7 +93,10 @@ const HeaderG = () => {
         <div className="box3 m-auto">
           <img className=" sm:hidden" src={Menu} alt="menu" />
           <ul className="hidden sm:flex">
-            <li className=" text-[#956D84]">Каталог товарів</li>
+            <li className=" text-[#956D84] flex">
+              <p>Каталог товарів</p>
+              <CatalogList/>
+            </li>
             <li className="mx-16">Форум</li>
             <li>Відгуки</li>
             <li className="mx-16">Акції</li>
