@@ -1,0 +1,39 @@
+.leaflet-container{
+    margin: 62px 0 163px 0;
+    width: 320px;
+    height: 327px;
+    border-radius: 10px;
+    position: relative;
+}
+.map-poligon{
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.3));
+
+
+.polygon{
+    clip-path: polygon(30px 150.00px,00px 190px,0px 299px,287px 299px,287.00px 190px,257px 150.00px,287px 110px,287px 0px,0px 0px,0px 110px);
+    position: absolute;
+    top:  120px;
+    left: 16px;
+    z-index: 1000;
+    background: #fff;
+    border-radius: 10px;
+    
+    
+}}
+
+
+@media(min-width: 640px){
+.leaflet-container{
+    margin: 80px auto;
+    width: 1420px;
+    height: 508px;
+}
+.map-poligon{
+.polygon{
+    clip-path: polygon(30px 254.00px,00px 294px,0px 508px,380px 508px,380.00px 294px,350px 254.00px,380.00px 214px,380px 0px,0px 0px,0px 214px);
+    top:  0px;
+    left: 1060px;
+    z-index: 1000;
+    background: #fff;
+}}
+}

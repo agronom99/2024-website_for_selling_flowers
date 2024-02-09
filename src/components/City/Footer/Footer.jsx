@@ -90,7 +90,7 @@ const Footer = () => {
           <img className=" w-20 h-4 my-auto sm:mt-4" src={Kliqpai} alt="liqpai" />
         </div>
         <div className="box-f-3 ml-5 sm:ml-64 sm:mt-6 mt-14">
-          <p>Copyright © 2021. Всі права захищені</p>
+          <p>Copyright © 2024. Всі права захищені</p>
         </div>
       </div>
     </div>
