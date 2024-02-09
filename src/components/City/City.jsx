@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaCaretDown } from "react-icons/fa";
 
-function CityG() {
+function City() {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
   const options = ['Вінниця', 'Київ', 'Львів'];
@@ -48,4 +48,4 @@ function CityG() {
   );
 }
 
-export default CityG;
+export default City;

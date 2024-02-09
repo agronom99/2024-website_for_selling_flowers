@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaCaretDown } from "react-icons/fa";
 
 
-function LanguageG() {
+function Language() {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
   const options = ['UK', 'EN', 'RU'];
@@ -50,4 +50,4 @@ function LanguageG() {
   );
 }
 
-export default LanguageG;
+export default Language;

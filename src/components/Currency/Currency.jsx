@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaCaretDown } from "react-icons/fa";
 
 
-function CurrencyG() {
+function Currency() {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
   const options = ['Грн.', 'USD', 'Euro'];
@@ -49,4 +49,4 @@ function CurrencyG() {
   );
 }
 
-export default CurrencyG;
+export default Currency;

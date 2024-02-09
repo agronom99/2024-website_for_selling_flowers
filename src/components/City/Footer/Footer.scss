@@ -1,0 +1,81 @@
+.footer{
+    font-family: 'Museo Sans Cyrl 300';
+    height: 654px;
+    width: 320px;
+    font-size: 14px;
+    line-height: 1.5rem/* 24px */;
+    background-color: #333333;
+    color: #FFFFFF;
+
+
+
+    .article-f{
+        display: grid;
+        grid-template-rows: 429px 132px  93px;
+        grid-template-columns: 320px;
+        align-items: center;
+        justify-items: center;
+        
+
+    }
+
+    .box-f-1{
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .box-f-2{
+        grid-column-start: 1;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .box-f-3{
+        grid-column-start: 1;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        font-size: 12px;
+
+    }
+
+}
+
+@media (min-width: 640px) {
+    .footer{
+        height: 348px;
+        width: 1920px;
+        font-size: 1rem/* 16px */;
+
+
+
+    .article-f{
+        grid-template-rows: 257px 91px;
+        grid-template-columns: 548px 1372px ;
+        
+        
+
+    }
+
+    .box-f-1{
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .box-f-2{
+        grid-column-start: 2;
+        grid-column-end: 3;
+
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .box-f-3{
+        grid-column-start: 1;
+        grid-column-end: 2;
+
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+}
+}
+

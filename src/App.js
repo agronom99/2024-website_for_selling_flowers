@@ -1,11 +1,13 @@
 
-import HeaderG from "./components/Header/HeaderG";
+import Footer from "./components/City/Footer/Footer";
+import Header from "./components/Header/Header";
 
 function App() {
 
   return (
     <div>
-    <HeaderG/>
+    <Header/>
+    <Footer/>
     </div>
   );
 }

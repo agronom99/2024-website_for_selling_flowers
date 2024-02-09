@@ -1,5 +1,5 @@
 import React from "react";
-import "./HeaderG.scss";
+import "./Header.scss";
 import Entrance from "../../components/images/entrance.svg";
 import Contacts from "../../components/images/contacts.png";
 import Delivery from "../../components/images/delivery.png";
@@ -12,9 +12,9 @@ import Vaiber from "../../components/images/vaiber.svg";
 import Insta from "../../components/images/insta.svg";
 import Telegram from "../../components/images/telegram (3) 1.svg";
 import Facebook from "../../components/images/facebook.svg";
-import CurrencyG from "../Currency/CurrencyG";
-import LanguageG from "../Language/LanguageG";
-import CityG from "../City/CityG";
+import Currency from "../Currency/Currency";
+import Language from "../Language/Language";
+import City from "../City/City";
 import Menu from "../../components/images/menu.png";
 import CatalogList from "../CatalogList/CatalogList";
 
@@ -25,15 +25,15 @@ const HeaderG = () => {
         <div className="article">
           <div className="box-1">
             <p className=" mr-1 sm:mr-2 hidden sm:contents">Валюта </p>
-            <CurrencyG />
+            <Currency />
           </div>
           <div className="box-2">
             <p className=" mr-1 sm:mr-3 hidden sm:contents">Мова </p>
-            <LanguageG />
+            <Language />
           </div>
           <div className="box-3">
             <p className="mr-2">Місто </p>
-            <CityG />
+            <City />
           </div>
           <div className="box-4">
             <img className=" w-6" src={Bookmarks} alt="entrance" />
