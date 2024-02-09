@@ -8,6 +8,7 @@ import L from "leaflet";
 import iconMarker from "leaflet/dist/images/marker-icon.png";
 import iconRetina from "leaflet/dist/images/marker-icon-2x.png";
 import iconShadow from "leaflet/dist/images/marker-shadow.png";
+import FU from '../../components/images/FU.jpg'
 
 
 const icon = L.icon({
@@ -36,7 +37,22 @@ const CardMap = () => {
           </Popup>
         </Marker>
       </MapContainer>
-      <div className="polygon w-[380px] h-[508px]"></div>
+      <div className="polygon w-[287px] h-[299px] sm:w-[380px] sm:h-[508px] ">
+        <div className=" flex justify-center mt-3">
+          <img className=" w-16 h-16" src={FU} alt="FU" />
+        </div>
+        <div className=" flex justify-center mt-5">
+          <img src="" alt="4" />
+          <p className=" mx-2">Телефон:</p>
+          <ul>
+            <li>+38 (063) 829 30 30</li>
+            <li>+38 (063) 829 30 30</li>
+          </ul>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
   );
 };
