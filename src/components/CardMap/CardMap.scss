@@ -29,11 +29,13 @@
     height: 508px;
 }
 .map-poligon{
+    img{
+        ;
+    }
+    
 .polygon{
     clip-path: polygon(30px 254.00px,00px 294px,0px 508px,380px 508px,380.00px 294px,350px 254.00px,380.00px 214px,380px 0px,0px 0px,0px 214px);
     top:  0px;
     left: 1060px;
-    z-index: 1000;
-    background: #fff;
 }}
 }
