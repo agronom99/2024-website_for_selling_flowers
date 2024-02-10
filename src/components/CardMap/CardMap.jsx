@@ -39,7 +39,7 @@ const CardMap = () => {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <Marker icon={icon} position={[49.23885642561507, 28.45899246958367]}>
+        <Marker icon={icon} position={[49.2398, 28.4591]}>
           <Popup>
             Прекрасне спливаюче вікно CSS3. <br /> Легко настроюється.
           </Popup>
