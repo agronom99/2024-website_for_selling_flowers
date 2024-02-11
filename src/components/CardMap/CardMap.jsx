@@ -18,6 +18,8 @@ import Insta from "../../components/images/insta.svg";
 import Facebook from "../../components/images/facebook.svg";
 import BlumVL from "../../components/images/blum-v-l.svg";
 import BlumVR from "../../components/images/blum-v-r.svg";
+import { useTranslation } from "react-i18next";
+
 
 
 
@@ -28,6 +30,8 @@ const icon = L.icon({
 });
 
 const CardMap = () => {
+  const {t} = useTranslation();
+
   return (
     <div className="map-poligon">
       <MapContainer
@@ -52,7 +56,7 @@ const CardMap = () => {
         <div className=" flex justify-center sm:flex-col sm:items-center mt-5 sm:mt-10 text-xs sm:text-base">
           <div className=" flex">
             <img className=" w-3.5 h-3.5 mt-1" src={Contact} alt="4" />
-            <p className=" mx-3">Телефон:</p>
+            <p className=" mx-3">{t('map.Phone')}:</p>
           </div>
           <ul>
             <li>+38 (063) 829 30 30</li>
@@ -71,7 +75,7 @@ const CardMap = () => {
         <div className=" flex flex-row sm:flex-col justify-center sm:items-center mt-5 sm:mt-10 text-xs sm:text-base">
           <div className=" flex">
             <img className=" w-6 h-4.5" src={Poshta} alt="4" />
-            <p className=" mx-2 mr-3 ">Почта:</p>
+            <p className=" mx-2 mr-3 ">{t('map.Post')}:</p>
           </div>
           <ul>
             <li>flowers.ukraine@gmail.com</li>

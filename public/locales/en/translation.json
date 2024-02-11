@@ -12,5 +12,9 @@
     "footer":{
         "Information": "Information"
 
+    },
+    "map":{
+        "Phone": "Phone",
+        "Post": "Post"
     }
 }

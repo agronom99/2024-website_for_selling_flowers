@@ -10,6 +10,13 @@ i18n
 .init({
     debug: true,
     fallbackLng: 'uk',
+    detection:{
+        order:['queryString', 'cookie'],
+        cache:['cookie']
+    },
+    interpolation:{
+        escapeValue: false
+    }
 });
 
 export default i18n;
