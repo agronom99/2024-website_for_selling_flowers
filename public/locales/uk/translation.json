@@ -1,0 +1,16 @@
+{
+    "header":{
+        "Currency": "Валюта",
+        "Language": "Мова",
+        "City": "Місто",
+        "Bookmarks": "Закладки",
+        "delivery": "Доставка та оплата",
+        "Contacts": "Контакти",
+        "Log_in": "Увійти",
+        "Registration": "Реєстрація"
+    },
+    "footer":{
+        "Information": "Інформація"
+
+    }
+}

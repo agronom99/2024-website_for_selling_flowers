@@ -17,27 +17,31 @@ import Language from "../Language/Language";
 import City from "../City/City";
 import Menu from "../../components/images/menu.png";
 import CatalogList from "../CatalogList/CatalogList";
+import { useTranslation } from "react-i18next";
 
-const HeaderG = () => {
+const Header = () => {
+  const {t} = useTranslation();
+
+  
   return (
     <div className="header">
       <div className="header-nav flex">
         <div className="article">
           <div className="box-1">
-            <p className=" mr-1 sm:mr-2 hidden sm:contents">Валюта </p>
+            <p className=" mr-1 sm:mr-2 hidden sm:contents">{t('header.Currency')} </p>
             <Currency />
           </div>
           <div className="box-2">
-            <p className=" mr-1 sm:mr-3 hidden sm:contents">Мова </p>
-            <Language />
+            <p className=" mr-1 sm:mr-3 hidden sm:contents">{t('header.Language')}</p>
+            <Language/>
           </div>
           <div className="box-3">
-            <p className="mr-2">Місто </p>
+            <p className="mr-2">{t('header.City')}</p>
             <City />
           </div>
           <div className="box-4">
             <img className=" w-6" src={Bookmarks} alt="entrance" />
-            <p className=" mx-2">Закладки</p>
+            <p className=" mx-2">{t('header.Bookmarks')}</p>
           </div>
           <div className="box-5 flex items-center">
             <span className=" mx-2 sm:hidden">|</span>
@@ -46,20 +50,20 @@ const HeaderG = () => {
               src={Delivery}
               alt="Delivery"
             />
-            <p className=" text-xs sm:text-base ">Доставка та оплата</p>
+            <p className=" text-xs sm:text-base ">{t('header.delivery')}</p>
             <span className=" mx-2 sm:hidden">|</span>
           </div>
           <div className="box-6">
             <img className=" w-5" src={Contacts} alt="Contacts" />
-            <p className=" mx-2 ">Контакти</p>
+            <p className=" mx-2 ">{t('header.Contacts')}</p>
           </div>
         </div>
         <div className="article-1 flex items-center">
           <div className=" flex ">
             <img className="" src={Entrance} alt="entrance" />
-            <p className=" mx-2">Увійти</p>
+            <p className=" mx-2">{t('header.Log_in')}</p>
           </div>
-          <div className="ml-2">| Реєстрація</div>
+          <div className="ml-2">| {t('header.Registration')}</div>
         </div>
       </div>
       <div className="wrapper w-[320px] sm:w-auto">
@@ -72,10 +76,10 @@ const HeaderG = () => {
         </div>
         <div className="box2 m-auto sm:mr-56">
           <div className=" flex">
-            <div className="hidden sm:flex w-56 sm:border-solid border-b border-[rgb(149 109 132 )] text-[#828282]">
+            <div className="hidden sm:flex w-56 sm:border-solid border-b border-[#956D84] text-[#828282]">
               Пошук по категоріям
             </div>
-            <div className=" flex ml-5 sm:border-solid sm:border-b border-[rgb(149 109 132 )]">
+            <div className=" flex ml-5 sm:border-solid sm:border-b border-[#956D84]">
               <input
                 className="hidden sm:flex sm:w-[500px]"
                 type="text"
@@ -135,4 +139,4 @@ const HeaderG = () => {
   );
 };
 
-export default HeaderG;
+export default Header;

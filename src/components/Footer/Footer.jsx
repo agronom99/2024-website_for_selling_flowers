@@ -1,19 +1,23 @@
 import React from "react";
 import "./Footer.scss";
-import FUf from "../../images/FUf.png";
-import Kmaster from "../../images/Kmaster.png";
-import Kmaestro from "../../images/Kmaestro.png";
-import Kelectron from "../../images/Kelectron.png";
-import Kvisa from "../../images/Kvisa.png";
-import Kprivat from "../../images/Kprivat.png";
-import Kliqpai from "../../images/Kliqpai.png";
-import BlumNL from "../../images/blum-n-l.svg";
-import BlumNR from "../../images/blum-n-r.svg";
+import FUf from "../../components/images/FUf.png";
+import Kmaster from "../../components/images/Kmaster.png";
+import Kmaestro from "../../components/images/Kmaestro.png";
+import Kelectron from "../../components/images/Kelectron.png";
+import Kvisa from "../../components/images/Kvisa.png";
+import Kprivat from "../../components/images/Kprivat.png";
+import Kliqpai from "../../components/images/Kliqpai.png";
+import BlumNL from "../../components/images/blum-n-l.svg";
+import BlumNR from "../../components/images/blum-n-r.svg";
+import { useTranslation } from "react-i18next";
+
 
 
 import { GoChevronRight } from "react-icons/go";
 
 const Footer = () => {
+  const {t} = useTranslation();
+
   return (
     <div className="footer">
       <div className=" hidden sm:flex sm:absolute">
@@ -30,7 +34,7 @@ const Footer = () => {
           <div className="mx-5 sm:ml-[188px] mt-[66px] sm:mt-[42px] flex flex-col sm:flex-row uppercase">
             <div className=" sm:w-56 ">
               <div className=" flex items-center justify-between font-black">
-                <p>Інформація</p>
+                <p>{t('footer.Information')}</p>
                 <div className=" w-2 h-3 sm:hidden">
                   <GoChevronRight className=" w-4 h-4" />
                 </div>

@@ -5,7 +5,7 @@ import { FaCaretDown } from "react-icons/fa";
 function Currency() {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
-  const options = ['Грн.', 'USD', 'Euro'];
+  const options = ['Грн.', 'USD'];
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);

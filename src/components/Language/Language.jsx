@@ -1,18 +1,24 @@
 import React, { useState } from 'react';
 import { FaCaretDown } from "react-icons/fa";
+import { useTranslation } from 'react-i18next';
 
 
 function Language() {
+  const { i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState(null);
-  const options = ['UK', 'EN', 'RU'];
+  const [selectedLanguage, setSelectedLanguage] = useState('UA');
+  const languages = [
+    {code:'uk', label:'UA'},
+    {code:'en', label: 'EN'},
+  ];
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
 
-  const handleOptionClick = (option) => {
-    setSelectedOption(option);
+  const handleLanguageClick = (language) => {
+    setSelectedLanguage(language.label);
+    i18n.changeLanguage(language.code);
     setIsOpen(false);
   };
 
@@ -37,13 +43,13 @@ function Language() {
   return (
     <div className="dropdown mx-2" style={dropdownStyle}>
       <button className="dropdown-toggle flex text-[#956D84]" onClick={toggleDropdown}>
-        {selectedOption || 'UK'} <div className='mx-2 my-auto text-white'><FaCaretDown /></div>
+        {selectedLanguage || 'UK'} <div className='mx-2 my-auto text-white'><FaCaretDown /></div>
       </button>
       <ul className="dropdown-menu" style={menuStyle} >
-        {options.map((option, index) => (
-          <li key={index} onClick={() => handleOptionClick(option)}>
-            {option}
-          </li>
+      {languages.map((language) => (
+                    <li key={language.code} onClick={() => handleLanguageClick(language)}>
+                      {language.label}
+                    </li>
         ))}
       </ul>
     </div>

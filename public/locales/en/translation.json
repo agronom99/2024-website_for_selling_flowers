@@ -1,0 +1,16 @@
+{
+    "header":{
+        "Currency": "Currency",
+        "Language": "Language",
+        "City": "City",
+        "Bookmarks": "Bookmarks",
+        "delivery": "Delivery and payment",
+        "Contacts": "Contacts",
+        "Log_in": "Log in",
+        "Registration": "Registration"
+    },
+    "footer":{
+        "Information": "Information"
+
+    }
+}
